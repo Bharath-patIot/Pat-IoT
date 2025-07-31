@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PAT IOT Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fefcf8; /* blended background */
+      color: #00457C;
+      text-align: center;
+    }
+
+    .container {
+      padding: 40px 20px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .logo {
+      width: 260px;
+      max-width: 80%;
+      margin: 20px auto;
+      opacity: 0.95;
+      filter: drop-shadow(0 0 8px rgba(0,0,0,0.08));
+      transition: transform 0.5s ease-in-out, opacity 0.8s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.02);
+      opacity: 1;
+    }
+
+    h1 {
+      font-size: 2.3em;
+      margin: 20px 0;
+      color: #00457C;
+    }
+
+    .button-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px 0 20px 0;
+    }
+
+    .button-grid a {
+      text-decoration: none;
+      background: #FF8000;
+      color: #ffffff;
+      padding: 16px 30px;
+      border-radius: 30px;
+      font-size: 1.1em;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      min-width: 200px;
+    }
+
+    .button-grid a:hover {
+      background: #00457C;
+      transform: scale(1.05);
+    }
+
+    .extras {
+      margin-top: 30px;
+      font-size: 1em;
+    }
+
+    .extras a {
+      color: #FF8000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .extras a:hover {
+      color: #00457C;
+      text-decoration: underline;
+    }
+
+    .video-section {
+      padding: 40px 20px 60px; /* Extra bottom padding before footer */
+      animation: fadeIn 2s ease-in;
+    }
+
+    .video-section h3 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      color: #00457C;
+    }
+
+    .video-section video {
+      width: 72%; /* 20% smaller */
+      max-width: 800px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+      transition: all 0.4s ease;
+    }
+
+    .footer {
+      background-color: #ddd;
+      color: #333;
+      padding: 20px 10px;
+      font-size: 0.9em;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      margin: 0 12px;
+      color: #00457C;
+      font-size: 1.4em;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #FF8000;
+      transform: scale(1.2);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.8em; }
+      .button-grid a {
+        font-size: 1em;
+        padding: 12px 20px;
+      }
+
+      .social-icons a {
+        font-size: 1.2em;
+      }
+
+      .video-section video {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="logo.png" alt="PAT IOT Logo" class="logo" />
+    <h1>Welcome to PAT IOT Solutions</h1>
+
+    <div class="button-grid">
+      <a href="brochure.pdf" target="_blank">📄 Brochure</a>
+      <a href="products.html" target="_blank">🖼 Product Pics</a>
+      <a href="https://patiot.in/" target="_blank">🌐 Website</a>
+      <a href="tel:+919030983040">📞 Contact Us</a>
+    </div>
+
+    <div class="extras">
+      <p>📷 Follow us on <a href="https://www.instagram.com/patiot.solution?igsh=MWFiZjkxdm1nNnRjdg==" target="_blank">Instagram</a></p>
+      <p>⭐ <a href="https://maps.app.goo.gl/QewVGJ6L9yyqbqFW6" target="_blank">Review us on Google</a></p>
+    </div>
+  </div>
+
+  <div class="video-section">
+    <h3>🎥 Watch Our Company Overview</h3>
+    <video autoplay muted loop controls playsinline>
+      <source src="video/patiot-promo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="footer">
+    <p>📍 D-2, 3rd Floor, CMC layout, 1-55/193, Near, Pearl Village Rd, Kondapur, Hyderabad, Telangana 500084</p>
+    <p>📞 9030983040</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/patiot.solution?igsh=MWFiZjkxdm1nNnRjdg==" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/share/16mTQ7LHeG/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/pat-iot-solutions-65b1a4375" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+
+</body>
+</html>
