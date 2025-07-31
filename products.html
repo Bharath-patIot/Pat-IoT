@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Gallery</title>
+
+  <!-- LightGallery CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css"/>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    #gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    #gallery a img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    #gallery a img:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      #gallery a img {
+        max-width: 90vw;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Product Gallery</h1>
+
+  <div id="gallery">
+    <a href="images/product1.jpg">
+      <img src="images/product1.jpg" alt="Product 1" />
+    </a>
+    <a href="images/product2.jpg">
+      <img src="images/product2.jpg" alt="Product 2" />
+    </a>
+    <a href="images/product3.jpg">
+      <img src="images/product3.jpg" alt="Product 3" />
+    </a>
+    <a href="images/product4.jpg">
+      <img src="images/product4.jpg" alt="Product 4" />
+    </a>
+    <a href="images/product5.jpg">
+      <img src="images/product5.jpg" alt="Product 5" />
+    </a>
+  </div>
+
+  <!-- LightGallery JS -->
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+
+  <script>
+    lightGallery(document.getElementById('gallery'), {
+      plugins: [lgZoom, lgFullscreen, lgThumbnail],
+      speed: 500,
+      download: false
+    });
+  </script>
+
+</body>
+</html>
